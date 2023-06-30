@@ -1,0 +1,451 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+</head>
+<style>
+    #bgimg
+    {
+        background-image: url({% static 'images/pic16.jpg' %});
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    #top
+    {
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.5);
+    }
+</style>
+<body>
+
+{% include "header.html" %}
+    {% if success %}
+<h4 style="color:green;">You have Registered Successfully!!your password is {{ password }}</h4>
+{% endif %}
+<div class="container-fluid" id="bgimg">
+    <div class="row">
+    <div class="col-md-3"></div>
+
+
+    <div class="col-md-6" id="top" style="border:2px solid #343a40;">
+
+  <h2 style="color:blue;font-family: Algerian;">Registration Form</h2>
+
+      <form method="post" enctype="multipart/form-data" action="" class="was-validated">
+{% csrf_token %}
+    <div class="form-group">
+        <label for="inputname"><h6 style="color:orange;">User Name:</h6></label><span id="nm"></span>
+      <input type="text" name="username" class="form-control" id="inputname" placeholder="Enter username"  required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <!--<div class="form-group">
+      <label for="pwd"><h6 style="color:orange;">Password:</h6></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>-->
+      <div class="form-group">
+          <label><h6 style="color:orange;">Gender:</h6></label>
+          <select class="form-control" name="gender">
+              <option>Male</option>
+              <option>Female</option>
+          </select>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label for="inputemail"><h6 style="color:orange;">Email:</h6></label><span id="em"></span>
+          <input type="email" name="email" id="inputemail" class="form-control" placeholder="Enter Email" required>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label><h6 style="color:orange;">ID Proof:</h6></label><span id="idtp"></span>
+          <select id="idtype" name="idproof" class="form-control">
+              <option>Aadhar Card</option>
+              <option>PAN Card</option>
+              <option>Voter ID Card</option>
+          </select>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <input type="text" name="idnum" id="idnum" class="form-control" placeholder="Enter Your Aadhar Card No./PAN Card No./Voter ID Card" />
+<br/>
+      <div class="form-group">
+          <label for="inputmobile"><h6 style="color:orange;">Mobile:</h6></label><span id="mb"></span>
+          <input type="number" name="mobile" id="inputmobile" class="form-control" placeholder="Enter Mobile" required>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label for="inputcity"><h6 style="color:orange;">City:</h6></label></label><span id="ct"></span>
+          <input type="text" name="city" id="inputcity" class="form-control" placeholder="Enter City" required>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label for="inputaddress"><h6 style="color:orange;">Address:</h6></label><span id="adrs"></span>
+          <input type="text" name="address" id="inputaddress" class="form-control" placeholder="Enter Address" required>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label><h6 style="color:orange;">State:</h6></label>
+          <select class="form-control" name="state">
+              {% for state in states %}
+              <option value="{{ state.name }}">{{ state.name }}</option>
+              {% endfor %}
+              <!--<option>Assam</option>
+              <option>Andhra Pradesh</option>
+              <option>Bihar</option>
+              <option>Chhattisgarh</option>
+              <option>Goa</option>
+              <option>Gujrat</option>
+              <option>Haryana</option>
+              <option>Madhya Pradesh</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Uttar Pradesh</option>
+              <option>West Bengal</option>-->
+          </select>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label for="inputpincode"><h6 style="color:orange;">Pin Code:</h6></label>
+          <input type="number" name="pincode" id="inputpincode" class="form-control" placeholder="Enter Pin Code" required>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group">
+          <label><h6 style="color:orange;">Country:</h6></label>
+          <select class="form-control" name="country">
+              {% for country in countries %}
+              <option value="{{ country.name }}">{{ country.name }}</option>
+              {% endfor %}
+              <!--<option>Australia</option>
+              <option>England</option>
+              <option>India</option>-->
+          </select>
+          <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+      <div class="form-group form-check">
+      <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember" required> <span style="color:orange;">I agree.</span>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+      <button type="reset" class="btn btn-default">Cancel</button>
+  </form>
+</div>
+
+
+        <div class="col-md-3"></div></div></div>
+<script>
+//name validation
+function validate_name(name)
+{
+var pattern=/^[A-Za-z ]{3,20}$/;
+if(pattern.test(name))
+return true;
+else
+return false;
+}
+
+
+
+//email validation
+function validate_email(email)
+{
+var pattern=/^[a-zA-Z0-9.-_]+@[a-zA-Z._-]+\.[a-zA-Z]{2,6}$/;
+if(pattern.test(email))
+return true;
+else
+return false;
+}
+
+//city validation
+function validate_city(city)
+{
+var pattern=/^[A-Za-z ]{3,20}$/;
+if(pattern.test(city))
+return true;
+else
+return false;
+}
+
+
+//mobile validation
+function validate_mobile(mobile)
+{
+var pattern=/^[0-9]{10}$/;
+if(pattern.test(mobile))
+return true;
+else
+return false;
+}
+
+
+
+//pin validation
+function validate_pin(pin)
+{
+var pattern=/^[0-9]{6}$/;
+if(pattern.test(pin))
+return true;
+else
+return false;
+}
+//upload photo validation function end
+
+//adhar card
+function validate_aadhar(aadhar){
+var pattern=/^[0-9]{12}$/;
+if(pattern.test(aadhar))
+return true;
+else
+return false;
+}
+//pan card
+function validate_pan(pan)
+{
+var pattern=/^[A-Z]{5}+[0-9]{4}+[a-z]{1}$/;
+if(pattern.test(pan))
+return true;
+else
+return false;
+}
+//voterid card
+function validate_voterid(voterid){
+var pattern=/^[0-9]{11}$/;
+if(pattern.test(voterid))
+return true;
+else
+return false;
+}
+
+$(document).ready(function(){
+	$("")
+		$("#sub").prop("disabled",false);
+
+$("#inputname").blur(function(){
+var name=$("#inputname").val();
+if(validate_name(name))
+{
+$(this).css("border","2px solid green");
+$("#nm").hide();
+}
+else if(name==''){
+$("#nm").html(' (please enter name)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#nm").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#nm").html(' (name should be in alphabets only)').css({'color':'red','font-size':'12px'});
+$("#nm").show();
+}
+
+});//end of name validation
+
+    $("#inputcity").blur(function(){
+var city=$("#inputcity").val();
+if(validate_city(city))
+{
+$(this).css("border","2px solid green");
+$("#ct").hide();
+}
+else if(city==''){
+$("#ct").html(' (please enter city)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#ct").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#ct").html(' (city should be in alphabets only)').css({'color':'red','font-size':'12px'});
+$("#ct").show();
+}
+
+});//end of city validation
+
+
+$("#inputemail").blur(function(){
+var email=$("#inputemail").val();
+if(validate_email(email))
+{
+$(this).css("border","2px solid green");
+$("#em").hide();
+}
+else if(email==''){
+$("#em").html(' (please enter email id)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#em").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#em").show();
+$("#em").html(' ( invalid email id)').css({'color':'red','font-size':'12px'});
+}
+
+});//end of email validation
+
+
+
+$("#inputmobile").blur(function(){
+var mobile=$("#inputmobile").val();
+if(validate_mobile(mobile))
+{
+$(this).css("border","2px solid green");
+$("#mb").hide();
+}
+else if(mobile==''){
+$("#mb").html(' (please enter mobile number)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#mb").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#mb").show();
+$("#mb").html(' ( invalid mobile number)').css({'color':'red','font-size':'12px'});
+}
+
+});//end of mobile validation
+
+
+$("#inputpincode").blur(function(){
+var pin=$("#inputpincode").val();
+if(validate_pin(pin))
+{
+$(this).css("border","2px solid green");
+}
+else
+{
+$(this).css("border","2px solid red");
+}
+});//pin code end
+
+
+
+//aadhar card validation
+
+	$("#idtype").mouseup(function(){
+	var idtype=$(this).val();
+	if(idtype=='Aadhar Card'){
+
+		$("#idnum").attr("placeholder","please enter 12-digits adhar card number");
+		$("#idtp").html(' ( please enter adhar card number)').css({'color':'red','font-size':'12px'});
+		$(this).css("border","2px solid green");
+		$("#idnum").blur(function(){
+          var adhar=$(this).val();
+
+          if(adhar==''){
+          $(this).css("border","2px solid red");
+          $("#idtp").show();
+          $("#idtp").html(' ( please enter adhar card number)').css({'color':'red','font-size':'12px'});
+          }
+          else {
+
+			if(validate_aadhar(adhar)){
+
+		  $("#idtp").hide();
+          $(this).css("border","2px solid green");
+          }
+          else{
+          $(this).css("border","2px solid red");
+          $("#idtp").show();
+          $("#idtp").html(' ( invalid adhar card number)').css({'color':'red','font-size':'12px'});
+          }	}
+          });
+	}
+    else if(idtype=='PAN Card'){
+		$("#idnum").attr("placeholder","please enter 10-alphanumeric pan card number");
+		$("#idtp").html(' ( please enter 10-alphanumeric pan card number)').css({'color':'red','font-size':'12px'});
+		$(this).css("border","2px solid green");
+		 $("#idnum").blur(function(){
+          var pan=$(this).val();
+          if(pan==''){
+          $(this).css("border","2px solid red");
+          $("#idtp").show();
+          $("#idtp").html(' ( please enter 10-alphanumeric pan card number)').css({'color':'red','font-size':'12px'});
+          }
+          else if(validate_pan(pan)){
+	      $("#idtp").hide();
+	      $(this).css("border","2px solid green");
+          }
+          else{
+          $(this).css("border","2px solid red");
+          $("#idtp").show();
+          $("#idtp").html(' ( invalid pan card number)').css({'color':'red','font-size':'12px'});
+          }
+         });
+	}
+	else if(idtype=='Voter ID Card'){
+		$("#idnum").attr("placeholder","please enter 11-digits voterid card number");
+		$("#idtp").html(' ( please enter 11-digits voterid card number)').css({'color':'red','font-size':'12px'});
+		$(this).css("border","2px solid green");
+		$("#idnum").blur(function(){
+        var voterid=$(this).val();
+        if(voterid==''){
+        $(this).css("border","2px solid red");
+        $("#idtp").show();
+        $("#idtp").html(' ( please enter 11-digits voterid card number)').css({'color':'red','font-size':'12px'});
+        }
+        else if(validate_voterid(voterid)){
+        $("#idtp").hide();
+        $(this).css("border","2px solid green");
+        }
+        else{
+        $(this).css("border","2px solid red");
+        $("#idtp").show();
+        $("#idtp").html(' ( invalid voterid card number)').css({'color':'red','font-size':'12px'});
+        }
+       });
+	}
+	else{
+		$(this).css("border","2px solid red");
+		$("#idtp").html(' ( please choose id type)').css({'color':'red','font-size':'12px'});
+	}
+});//validate idtype end
+
+
+//for submit button
+$("#myform").submit(function(){
+var name=$("#name").val();
+var email=$("#email").val();
+var mobile=$("#mobile").val();
+var city=$("#city").val();
+
+if(name=='')
+return false;
+if(email=='')
+return false;
+if(mobile=='')
+return false;
+if (city=='')
+    return false;
+
+if(!validate_name(name))
+return false;
+else if(!validate_email(email))
+return false;
+else if(!validate_mobile(mobile))
+return false;
+else if(!validate_city(city))
+    return false;
+
+else
+{
+return true;
+}
+
+});
+});
+</script>
+</body>
+</html>

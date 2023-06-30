@@ -1,0 +1,133 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Profile</title>
+</head>
+<style>
+    #bgimg
+    {
+        background-image: url({% static 'images/pic16.jpg' %});
+        background-size:cover;
+        height:620px;
+        background-attachment: fixed;
+
+    }
+    #top
+    {
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.5);
+        margin-top:100px;
+    }
+</style>
+<body>
+{% include "header.html" %}
+<div class="container-fluid">
+    <div class="row" id="bgimg">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6" id="top">
+
+
+        <table>
+            {% for d in my_data %}
+                <tr>
+                <td style="color:deeppink;font-family: Algerian;">ID:</td>
+                <td style="color:deeppink;font-family: Algerian;">
+                    {{ d.id }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">User Name:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.username }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Password:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.password }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Gender:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.gender }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Email:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.email }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">ID Proof:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.idproof }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">ID Number:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">{{ d.idnum }}</td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Mobile:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.mobile }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian">City:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.city }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Address:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.address }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">State:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">{{ d.state }}</td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Pin Code:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.pincode }}
+                </td>
+                </tr>
+
+                <tr>
+                <td style="color:orange;font-family: Algerian;">Country:</td>
+                <td style="color:deepskyblue;font-family: Algerian;">
+                    {{ d.country }}
+                </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <a href="{% url 'editprofile' %}">Edit Profile</a>
+    <a href="{% url 'changepassword' %}">Change Password</a>
+    <div class="col-md-3">
+
+    </div>
+    </div>
+</div>
+</body>
+</html>

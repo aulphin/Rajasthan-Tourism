@@ -1,0 +1,135 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Profile Form</title>
+</head>
+<style>
+    #bgimg
+    {
+        background-image: url({% static 'images/pic16.jpg' %});
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    #top
+    {
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.5);
+    }
+</style>
+<body>
+
+{% include "header.html" %}
+    {% if success %}
+<h4 style="color:green;">You have Updated Successfully!!</h4>
+{% endif %}
+<div class="container-fluid" id="bgimg">
+    <div class="row">
+    <div class="col-md-3"></div>
+
+
+    <div class="col-md-6" id="top" style="border:2px solid #343a40;">
+
+  <h2 style="color:blue;font-family: Algerian;">Edit Profile Form</h2>
+
+      <form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+    <div class="form-group">
+        <label><h6 style="color:orange;">User Name:</h6></label>
+      <input type="text" name="username" class="form-control" value="{{ user.username }}" required>
+    </div>
+
+    <div class="form-group">
+      <label><h6 style="color:orange;">Password:</h6></label>
+      <input type="password" class="form-control" value="{{ user.password }}" name="password"  required>
+    </div>
+
+      <div class="form-group">
+          <label><h6 style="color:orange;">Gender:</h6></label>
+          <select class="form-control" name="gender" value="{{ user.gender }}">
+              <option>Male</option>
+              <option>Female</option>
+          </select>
+    </div>
+
+      <div class="form-group">
+          <label><h6 style="color:orange;">Email:</h6></label>
+          <input type="email" name="email" value="{{ user.email }}" class="form-control" required>
+    </div>
+
+      <div class="form-group">
+          <label><h6 style="color:orange;">ID Proof:</h6></label>
+          <select id="idtype" name="idproof" value="{{ user.idproof }}" class="form-control">
+              <option>Aadhar Card</option>
+              <option>PAN Card</option>
+              <option>Voter ID Card</option>
+          </select>
+    </div>
+
+      <input type="text" name="idnum" value="{{ user.idnum }}" class="form-control" />
+<br/>
+      <div class="form-group">
+          <label><h6 style="color:orange;">Mobile:</h6></label>
+          <input type="number" name="mobile" value="{{ user.mobile }}" class="form-control"  required>
+
+    </div>
+      <div class="form-group">
+          <label><h6 style="color:orange;">City:</h6></label></label>
+          <input type="text" name="city" value="{{ user.city }}" class="form-control"  required>
+    </div>
+      <div class="form-group">
+          <label><h6 style="color:orange;">Address:</h6></label>
+          <input type="text" name="address" value="{{ user.address }}" class="form-control" required>
+    </div>
+
+      <div class="form-group">
+          <label><h6 style="color:orange;">State:</h6></label>
+          <select class="form-control" name="state">
+              {% if user.state == 'Assam' %}
+               <option selected>Assam</option>
+              {% else  %}
+              <option>Assam</option>
+              {% endif %}
+          {% if user.state == 'Andhra Pradesh' %}
+          <option selected>Andhra Pradesh</option>
+          {% else %}
+          <option
+
+
+              <option>Andhra Pradesh</option>
+              <option>Bihar</option>
+              <option>Chhattisgarh</option>
+              <option>Goa</option>
+              <option>Gujrat</option>
+              <option>Haryana</option>
+              <option>Madhya Pradesh</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Uttar Pradesh</option>
+              <option>West Bengal</option>
+          </select>
+    </div>
+
+      <div class="form-group">
+          <label><h6 style="color:orange;">Pin Code:</h6></label>
+          <input type="number" name="pincode" value="{{ user.pincode }}" class="form-control" required>
+    </div>
+
+      <div class="form-group">
+          <label><h6 style="color:orange;">Country:</h6></label>
+          <select class="form-control" name="country" value="{{ user.country }}">
+              <option>Australia</option>
+              <option>England</option>
+              <option>India</option>
+          </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+
+
+        <div class="col-md-3"></div></div></div>
+</body>
+</html>

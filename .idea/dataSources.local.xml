@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="db.sqlite3" uuid="7fbb4df7-8247-4c63-8eb3-c99bb47a7049">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="db.sqlite3 [2]" uuid="afccb963-214b-46ee-9946-1e30c954546c">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="db.sqlite3 [3]" uuid="ab160fc1-6bce-428a-a3f5-8c3873db3651">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="db.sqlite3 [4]" uuid="82c3fd0a-b640-45a0-9850-2472d462665f">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="db.sqlite3 [5]" uuid="d794d4f3-c398-4eeb-9f57-e5f7eb7da7c5">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="db.sqlite3 [6]" uuid="04e1533d-987e-4359-8520-637ab53a3995">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="db.sqlite3 [7]" uuid="12ff2d21-3d2b-49c3-8494-ceeb1e73fe1d">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+  </component>
+</project>

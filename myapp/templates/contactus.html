@@ -1,0 +1,215 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Contact Us Page</title>
+</head>
+<style>
+    #map {
+        height: 500px;
+        width: 100%;
+       }
+
+</style>
+<body>
+{% include "header.html" %}
+ {% if success %}
+<h4 style="color:green;">You have sended Query successfully!!</h4>
+{% endif %}
+<div class="container-fluid">
+    <div class="row">
+        <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 25.7627846, lng: 84.1322915};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ehPbqMythQW6rlVhVeYtDNm3dtIgPGo&callback=initMap">
+    </script>
+    </div>
+    <div class="row" style="background-color:#343a40;">
+
+<div class="col-sm-6" style="margin-top:100px;">
+    <h4 style="color:blue;font-family: Algerian;">Contact Us</h4>
+    <h6 style="color:orange;">Name: Shikha Tiwari</h6>
+    <h6 style="color:orange;">Address: Mahadev Nagar Near SBI Tikhampur Ballia(U.P.)277001</h6>
+    <h6 style="color:orange;">Email ID: ershikhatiwari@gmail.com, kumarursumit@gmail.com</h6>
+    <h6 style="color:orange;">Mobile Number: 88400839254, 8840087343, 8737985049</h6>
+</div>
+        <div class="col-sm-6">
+            <h2 style="color:blue;font-family: Algerian;">Query Form</h2>
+
+      <form method="post" enctype="multipart/form-data" action="" class="was-validated">
+{% csrf_token %}
+    <div class="form-group">
+        <label for="inputname"><h6 style="color:orange;">User Name:</h6></label><span id="nm"></span>
+      <input type="text" name="username" class="form-control" id="inputname" placeholder="Enter Your Name"  required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+          <div class="form-group">
+        <label for="inputemail"><h6 style="color:orange;">Email:</h6></label><span id="em"></span>
+      <input type="email" name="email" class="form-control" id="inputemail" placeholder="Enter Your Email ID"  required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+          <div class="form-group">
+        <label for="inputmobile"><h6 style="color:orange;">Mobile:</h6></label><span id="mb"></span>
+      <input type="number" name="mobile" class="form-control" id="inputmobile" placeholder="Enter Your Mobile Number"  required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+          <div class="form-group">
+        <label for="inputquery"><h6 style="color:orange;">Query:</h6></label><span id="qr"></span>
+              <textarea name="query" class="form-control" id="inputquery" placeholder="Enter Your Query" required></textarea>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+          <button type="submit" class="btn btn-warning">Send</button>
+          <button type="reset" class="btn btn-dark">Cancel</button>
+      </form>
+        </div>
+    </div>
+</div>
+
+<script>
+//name validation
+function validate_name(name)
+{
+var pattern=/^[A-Za-z ]{3,20}$/;
+if(pattern.test(name))
+return true;
+else
+return false;
+}
+
+//email validation
+function validate_email(email)
+{
+var pattern=/^[a-zA-Z0-9.-_]+@[a-zA-Z._-]+\.[a-zA-Z]{2,6}$/;
+if(pattern.test(email))
+return true;
+else
+return false;
+}
+
+//mobile validation
+function validate_mobile(mobile)
+{
+var pattern=/^[0-9]{10}$/;
+if(pattern.test(mobile))
+return true;
+else
+return false;
+}
+
+$(document).ready(function(){
+	$("")
+		$("#sub").prop("disabled",false);
+
+$("#inputname").blur(function(){
+var name=$("#inputname").val();
+if(validate_name(name))
+{
+$(this).css("border","2px solid green");
+$("#nm").hide();
+}
+else if(name==''){
+$("#nm").html(' (please enter name)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#nm").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#nm").html(' (name should be in alphabets only)').css({'color':'red','font-size':'12px'});
+$("#nm").show();
+}
+
+});//end of name validation
+
+    $("#inputemail").blur(function(){
+var email=$("#inputemail").val();
+if(validate_email(email))
+{
+$(this).css("border","2px solid green");
+$("#em").hide();
+}
+else if(email==''){
+$("#em").html(' (please enter email id)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#em").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#em").show();
+$("#em").html(' ( invalid email id)').css({'color':'red','font-size':'12px'});
+}
+
+});//end of email validation
+
+
+
+$("#inputmobile").blur(function(){
+var mobile=$("#inputmobile").val();
+if(validate_mobile(mobile))
+{
+$(this).css("border","2px solid green");
+$("#mb").hide();
+}
+else if(mobile==''){
+$("#mb").html(' (please enter mobile number)').css({'color':'red','font-size':'12px'});
+$(this).css("border","2px solid red");
+$("#mb").show();
+}
+else{
+$(this).css("border","2px solid red");
+$("#mb").show();
+$("#mb").html(' ( invalid mobile number)').css({'color':'red','font-size':'12px'});
+}
+
+});//end of mobile validation
+
+//for submit button
+$("#myform").submit(function(){
+var name=$("#name").val();
+var email=$("#email").val();
+var mobile=$("#mobile").val();
+
+
+if(name=='')
+return false;
+if(email=='')
+return false;
+if(mobile=='')
+return false;
+
+if(!validate_name(name))
+return false;
+else if(!validate_email(email))
+return false;
+else if(!validate_mobile(mobile))
+return false;
+
+else
+{
+return true;
+}
+
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Rajasthan Tourism</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .carousel-inner img
+        {
+            height:500px;
+            width:100%;
+        }
+    h4
+    {
+        height:50px;
+        width:100%;
+        background-color: #343a40;
+        text-align: center;
+        font-family: Algerian;
+    }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #343a40;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+    <body>
+<form method="post" enctype="multipart/form-data">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<div class="container">
+    <a href="" class="navbar-brand text-warning font-weight-bold"><span style="font-family: Algerian">Rajasthan Tourism</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#collapsenavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+        <ul class="navbar-nav ml-auto">
+<li class="nav-item">
+    <a href="{% url 'index' %}" class="nav-link"><span style="color:orange;font-family: Algerian;">HOME</span></a>
+</li>
+            <li class="nav-item">
+                <a href="" class="nav-link"><span style="color:orange;font-family: Algerian;">ABOUT US</span></a>
+</li>
+            <li class="nav-item">
+                <a href="{% url 'login' %}" class="nav-link"><span style="color:orange;font-family: Algerian;">E-TICKETING</span></a>
+</li>
+            <li class="nav-item">
+                <a href="{% url 'login' %}" class="nav-link"><span style="color:orange;font-family: Algerian;">STAY</span></a>
+</li>
+            <li class="nav-item">
+                <a href="{% url 'contactus' %}" class="nav-link"><span style="color:orange;font-family: Algerian;">CONTACT US</span></a>
+</li>
+        </ul>
+
+    </div>
+
+</div>
+    </nav>
+
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+      {% for image in images %}
+          {% if forloop.counter == 1 %}
+            <div class="carousel-item active">
+          {% else %}
+            <div class="carousel-item">
+          {% endif %}
+                <img src="{{ image.name.url }}" alt="Image not found" width="100%" height="500px;">
+            </div>
+    {% endfor %}
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+    <div class="container-fluid">
+       <h4 style="color:orange;font-family: Algerian;">PHOTOS</h4>
+    </div>
+    <div class="container-fluid">
+<div class="row">
+{% for card in cards %}
+    <div class="col-md-3">
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="{{ card.image.url }}"  alt="Image Not Found" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h3 style="color:orange;">{{ card.title }}</h3>
+      <p style="color:orange;">{{ card.description }}</p>
+    </div>
+  </div>
+</div>
+    </div>
+    {% endfor %}
+
+
+    <!--<div class="col-md-3">
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h3 style="color:orange;">DAL BATI CHURMA</h3>
+      <p style="color:orange;">Dal-Bati-Churma is a complete one dish
+and very popular Rajasthan, India.
+      It is commonly served
+at all festivities, including religious occasions, wedding ceremonies, and
+birthday parties in Rajasthan.
+      “Dal-Baati-Churma”, is a
+combination of three different food items – Daal (lentils), Baati and Churma
+(Sweet). </p>
+    </div>
+  </div>
+</div>
+    </div>
+
+ <div class="col-md-3">
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h3 style="color:orange;">COSTUMES</h3>
+      <p style="color:orange;">Dhoti is the main Rajasthan traditional dress to the men in Rajasthan.
+          They are called bandia-angarkha and potia. Bandia-angarkha is the traditional dress in the model
+          of a jacket which closely fits the chest and seems loose around the waist.
+          Along with this dress men also wear a bright
+          coloured turban or the headdress. The turbans seem in various colours which are
+          fit to the different region’s weather.</p>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+ <div class="col-md-3">
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h3 style="color:orange;">JEWELLARY</h3>
+      <p style="color:orange;">Nath or Nathni is one of the most popular jewellery styles worn by Rajasthani women.
+          It is usually worn on the left nostril and joined to the left ear with a gold or pearl chain.
+          Nath is usually adorned on the wedding or festive occasions.
+          A large golden Nath embellished with a small Kundan makes every Rajasthani bride
+          look elegant and royal.</p>
+    </div>
+  </div>
+</div>
+    </div>
+</div>-->
+        </div>
+<div class="container-fluid">
+       <h4 style="color:orange;font-family: Algerian;">VIDEOS</h4>
+    </div>
+<div class="container-fluid">
+    <div class="row">
+<div class="col-md-3">
+    <video style="height:250px;width:100%;border:2px solid #343a40;" controls>
+  <source src="{% static 'videos/vid1.mp4' %}" type="video/mp4">
+</video>
+</div>
+        <div class="col-md-3">
+    <video style="height:250px;width:100%;border:2px solid #343a40;" controls>
+  <source src="{% static 'videos/vid2.mp4' %}" type="video/mp4">
+</video>
+</div>
+        <div class="col-md-3">
+    <video style="height:250px;width:100%;border:2px solid #343a40;" controls>
+  <source src="{% static 'videos/vid3.mp4' %}" type="video/mp4">
+</video>
+</div>
+        <div class="col-md-3">
+    <video style="height:250px;width:100%;border:2px solid #343a40;" controls>
+  <source src="{% static 'videos/vid4.mp4' %}" type="video/mp4">
+</video>
+</div>
+    </div>
+</div>
+</form>
+</body>
+</html>

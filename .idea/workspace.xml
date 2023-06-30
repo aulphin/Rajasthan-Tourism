@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b3869e3-881e-461f-ad8a-58de6059c7e9" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [7]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [7]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [7]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [7]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="myapp_booked: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>image</find>
+      <find>filter(re</find>
+      <find>location</find>
+      <find>register</find>
+      <find>booked</find>
+      <find>place</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/myapp/templates/e-ticketing.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/header1.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/haeder.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/contactus.html" />
+        <option value="$PROJECT_DIR$/rajasthantourism/urls.py" />
+        <option value="$PROJECT_DIR$/myapp/templates/registration.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/rajasthantourism/settings.py" />
+        <option value="$PROJECT_DIR$/myapp/templates/booknow.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/login.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/header.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/myprofile.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/forgot.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/change.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/changepassword.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/index.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/editprofile.html" />
+        <option value="$PROJECT_DIR$/myapp/models.py" />
+        <option value="$PROJECT_DIR$/myapp/admin.py" />
+        <option value="$PROJECT_DIR$/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/myapp/templates/eticketing.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/place.html" />
+        <option value="$PROJECT_DIR$/myapp/templates/booked.html" />
+        <option value="$PROJECT_DIR$/myapp/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1260" />
+    <option name="height" value="720" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rajasthantourism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rajasthantourism" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rajasthantourism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rajasthantourism" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rajasthantourism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rajasthantourism" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rajasthantourism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rajasthantourism" type="462c0819:PsiDirectoryNode" />
+              <item name="rajasthantourism" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\rajasthantourism\myapp\static\images" />
+      <recent name="C:\Users\HP\Desktop\rajasthantourism\myapp\static\videos" />
+      <recent name="C:\Users\HP\Desktop\rajasthantourism\myapp\templates" />
+      <recent name="C:\Users\HP\Desktop\rajasthantourism\myapp\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="rajasthantourism" type="Python.DjangoServer" factoryName="Django server">
+      <module name="rajasthantourism" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b3869e3-881e-461f-ad8a-58de6059c7e9" name="Default Changelist" comment="" />
+      <created>1563267092096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563267092096</updated>
+      <workItem from="1563267127964" duration="99000" />
+      <workItem from="1563267269868" duration="55000" />
+      <workItem from="1563267358929" duration="1759000" />
+      <workItem from="1563294956404" duration="6586000" />
+      <workItem from="1563351184319" duration="1247000" />
+      <workItem from="1563353836204" duration="12259000" />
+      <workItem from="1563393545563" duration="4412000" />
+      <workItem from="1563428287096" duration="9850000" />
+      <workItem from="1563449893237" duration="6974000" />
+      <workItem from="1563472441748" duration="4138000" />
+      <workItem from="1563519651865" duration="1259000" />
+      <workItem from="1563527409045" duration="135000" />
+      <workItem from="1563532171637" duration="1971000" />
+      <workItem from="1563598655418" duration="17000" />
+      <workItem from="1563600914060" duration="13000" />
+      <workItem from="1563600970982" duration="25000" />
+      <workItem from="1563601115777" duration="25000" />
+      <workItem from="1563602251470" duration="27000" />
+      <workItem from="1563602819065" duration="19000" />
+      <workItem from="1563602904314" duration="46000" />
+      <workItem from="1563603508825" duration="41000" />
+      <workItem from="1563603594969" duration="26000" />
+      <workItem from="1563603829891" duration="46000" />
+      <workItem from="1563604022977" duration="17000" />
+      <workItem from="1563604044354" duration="12000" />
+      <workItem from="1563604225313" duration="22000" />
+      <workItem from="1563606047139" duration="19000" />
+      <workItem from="1563607509677" duration="30000" />
+      <workItem from="1563774106698" duration="58000" />
+      <workItem from="1563794401258" duration="575000" />
+      <workItem from="1563882286288" duration="3167000" />
+      <workItem from="1563959571876" duration="3384000" />
+      <workItem from="1563984571765" duration="2493000" />
+      <workItem from="1564032580851" duration="20000" />
+      <workItem from="1564136980026" duration="1979000" />
+      <workItem from="1564206520712" duration="594000" />
+      <workItem from="1564220484278" duration="72000" />
+      <workItem from="1564373292102" duration="24687000" />
+      <workItem from="1564459652996" duration="3363000" />
+      <workItem from="1564463460240" duration="16884000" />
+      <workItem from="1564504780114" duration="5480000" />
+      <workItem from="1564546185744" duration="8823000" />
+      <workItem from="1564562157806" duration="14466000" />
+      <workItem from="1564649421872" duration="2720000" />
+      <workItem from="1564753869168" duration="283000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="140177000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="20" width="1260" height="720" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28083333" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27072757" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32993197" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.025" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27583334" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2585034" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32993197" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.23583333" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myapp/templates/e-ticketing.html" />
+    <entry file="das://afccb963-214b-46ee-9946-1e30c954546c/schema/main/table/Contactus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5db0edc9-c8b7-4259-9929-72cfa9ca79ba">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/afccb963-214b-46ee-9946-1e30c954546c/console.sql" />
+    <entry file="file://$PROJECT_DIR$/myapp/templates/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://7fbb4df7-8247-4c63-8eb3-c99bb47a7049/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="bae60e5c-d1ae-44ce-ba77-c35b746687a2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dr._SN_Basu.JPG" />
+    <entry file="file://F:/profilepro/myapp/models.py" />
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/slider1.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/media/slider2.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/media/images/slider10_g8p4DvE.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/images/slider7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/images/slider8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/images/slider10.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/images/slider10_TYKJwPZ.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rajasthantourism/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#640#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://afccb963-214b-46ee-9946-1e30c954546c/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="738191dd-f74b-4564-944b-05a00bca18a0">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab160fc1-6bce-428a-a3f5-8c3873db3651/console.sql" />
+    <entry file="das://ab160fc1-6bce-428a-a3f5-8c3873db3651/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="738191dd-f74b-4564-944b-05a00bca18a0">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/82c3fd0a-b640-45a0-9850-2472d462665f/console.sql" />
+    <entry file="das://82c3fd0a-b640-45a0-9850-2472d462665f/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="738191dd-f74b-4564-944b-05a00bca18a0">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://82c3fd0a-b640-45a0-9850-2472d462665f/schema/main/table/auth_permission">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="738191dd-f74b-4564-944b-05a00bca18a0">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d794d4f3-c398-4eeb-9f57-e5f7eb7da7c5/console.sql" />
+    <entry file="das://d794d4f3-c398-4eeb-9f57-e5f7eb7da7c5/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="738191dd-f74b-4564-944b-05a00bca18a0">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rajasthantourism/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/04e1533d-987e-4359-8520-637ab53a3995/console.sql" />
+    <entry file="das://04e1533d-987e-4359-8520-637ab53a3995/schema/main/table/myapp_gallery">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5f03bda7-97b9-4539-b01a-3730c712dfe2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://04e1533d-987e-4359-8520-637ab53a3995/schema/main/table/myapp_packagelocation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5f03bda7-97b9-4539-b01a-3730c712dfe2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://04e1533d-987e-4359-8520-637ab53a3995/schema/main/table/myapp_packages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5f03bda7-97b9-4539-b01a-3730c712dfe2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/forgot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/changepassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#h1#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://04e1533d-987e-4359-8520-637ab53a3995/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="37595df3-922d-4bb8-8d31-f8ca7dacce71">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="164" column="6" lean-forward="true" selection-start-line="164" selection-start-column="6" selection-end-line="164" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/myprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1753">
+          <caret line="125" column="60" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1286">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/eticketing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="75" column="50" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/editprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python37-32/Lib/site-packages/django/contrib/sessions/backends/base.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/12ff2d21-3d2b-49c3-8494-ceeb1e73fe1d/console.sql" />
+    <entry file="file://$PROJECT_DIR$/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/place.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="204" column="21" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://12ff2d21-3d2b-49c3-8494-ceeb1e73fe1d/schema/main/table/myapp_packages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a2b9f2c5-34d1-4e35-ba39-2d1e464552cd">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/templates/booked.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://12ff2d21-3d2b-49c3-8494-ceeb1e73fe1d/schema/main/table/myapp_booked">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a2b9f2c5-34d1-4e35-ba39-2d1e464552cd">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://12ff2d21-3d2b-49c3-8494-ceeb1e73fe1d/schema/main/table/Registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="9687f065-c79c-47a9-a130-a585d9d16d37">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
